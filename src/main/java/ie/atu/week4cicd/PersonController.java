@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/Person")
 public class PersonController {
 
-    @PostMapping("/Create Person")
-    public ResponseEntity<String> createPerson(@Valid @RequestBody Person person) {
+    @PostMapping("/CreatePerson")
+    public ResponseEntity<String> CreatePerson(@Valid @RequestBody Person ) {
         return new ResponseEntity<>("Person created successfully", HttpStatus.OK);
     }
 }
