@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PersonController {
 
     @PostMapping("/CreatePerson")
-    public ResponseEntity<String> CreatePerson(@Valid @RequestBody Person ) {
+    public ResponseEntity<String> CreatePerson(@Valid @RequestBody Person person) {
         return new ResponseEntity<>("Person created successfully", HttpStatus.OK);
     }
 }
